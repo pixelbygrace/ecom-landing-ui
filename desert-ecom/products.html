@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Desserts Menu</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,21 +15,31 @@
   <div class="product">
     <h3>Chocolate Cake</h3>
     <p>₱850</p>
-    <button>Add to Cart</button>
+    <button onclick="addToCart('Chocolate Cake')">Add to Cart</button>
   </div>
 
   <div class="product">
     <h3>Red Velvet Cake</h3>
     <p>₱900</p>
-    <button>Add to Cart</button>
+    <button onclick="addToCart('Red Velvet Cake')">Add to Cart</button>
   </div>
 
   <div class="product">
     <h3>Cheesecake</h3>
     <p>₱750</p>
-    <button>Add to Cart</button>
+    <button onclick="addToCart('Cheesecake')">Add to Cart</button>
   </div>
 </section>
+
+<script>
+let cart = [];
+
+function addToCart(item) {
+  cart.push(item);
+  alert(item + " added to cart!");
+  console.log(cart);
+}
+</script>
 
 </body>
 </html>

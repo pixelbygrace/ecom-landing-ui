@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sweet Delights | Cakes & Desserts</title>
+  <title>Sweet Delights</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="navbar">
   <h1>Sweet Delights</h1>
-  <nav>
+
+  <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+
+  <nav class="menu" id="menu">
     <a href="index.html">Home</a>
     <a href="products.html">Shop</a>
-    <a href="orders.html">Orders</a>
+    <a href="login.html">Login</a>
   </nav>
 </header>
 
 <section class="hero">
   <h2>Freshly Baked Happiness 🍰</h2>
-  <p>Delicious cakes and desserts made with love.</p>
+  <p>Cakes and desserts made with love</p>
   <a href="products.html" class="btn">Shop Now</a>
 </section>
 
@@ -28,9 +31,11 @@
   <div class="card">🚚 Fast Delivery</div>
 </section>
 
-<footer>
-  <p>© 2025 Sweet Delights</p>
-</footer>
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
